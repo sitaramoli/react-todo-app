@@ -1,0 +1,25 @@
+.profile-container {
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dfdfdf;
+  .profile {
+    background-color: #fff;
+    border-radius: 0.8rem;
+    padding: 2rem;
+    min-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__name {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+    &__email {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
+}

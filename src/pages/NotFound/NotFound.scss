@@ -1,0 +1,14 @@
+.not-found {
+  font-family: inherit;
+  &__code {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  &__text {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #f0f0f0;
+  }
+}

@@ -1,0 +1,45 @@
+.login-wrapper {
+  background-color: #242424;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .login {
+    background-color: #fff;
+    padding: 4rem 3rem;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    &__title {
+      text-align: center;
+      font-family: inherit;
+      font-size: 2.4rem;
+      font-weight: 700;
+    }
+    &__slogan {
+      font-family: inherit;
+      font-size: 1.8rem;
+      font-weight: 500;
+      color: rgba(36, 36, 36, 0.5);
+      margin-top: -2rem;
+    }
+    &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    &__footer {
+      & span {
+        font-family: inherit;
+        font-size: 1.4rem;
+        font-weight: 400;
+      }
+      &__register {
+        margin-left: 0.5rem;
+        color: #bd641b;
+        cursor: default;
+      }
+    }
+  }
+}

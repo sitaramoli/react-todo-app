@@ -1,0 +1,49 @@
+.header {
+  background-color: #242424;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  &__title {
+    font-family: inherit;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  &__nav {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    a {
+      padding: 0.5rem;
+      color: #fff;
+      font-family: inherit;
+      font-weight: 600;
+      font-size: 1.6rem;
+      letter-spacing: 0.1rem;
+      &:hover {
+        background-color: #fff;
+        color: #242424;
+      }
+    }
+    .logout-btn {
+      border: none;
+      padding: 0.5rem;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 1.6rem;
+      font-weight: 600;
+      background-color: #242424;
+      color: #fff;
+      &:hover {
+        background-color: #fff;
+        color: #242424;
+      }
+      &:disabled {
+        opacity: 0.5;
+      }
+    }
+  }
+}

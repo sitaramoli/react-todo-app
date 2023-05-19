@@ -1,0 +1,16 @@
+.button {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.8rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.25;
+  letter-spacing: 0.02rem;
+  background-color: #242424;
+  &:disabled {
+    opacity: 0.6;
+  }
+}

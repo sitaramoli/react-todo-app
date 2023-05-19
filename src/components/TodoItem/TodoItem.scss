@@ -1,0 +1,29 @@
+.todo-item {
+  min-width: 50rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  &__data {
+    font-family: inherit;
+    &__title {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+    &__description {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+  }
+  &__action {
+    display: flex;
+    gap: 1rem;
+    &__delete {
+      color: #db2b2b;
+      font-size: 2rem;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

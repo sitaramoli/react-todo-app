@@ -1,0 +1,57 @@
+.checkbox {
+  align-self: flex-start;
+  display: flex;
+  gap: 1.2rem;
+  /* Hide the default checkbox */
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  /* Style the custom checkbox */
+  input[type="checkbox"] + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 2.5rem; /* Adjust as needed */
+    cursor: pointer;
+  }
+
+  /* Checkbox tick */
+  input[type="checkbox"] + label:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.8rem; /* Adjust as needed */
+    height: 1.8rem; /* Adjust as needed */
+    border: 0.1rem solid #242424; /* Adjust color as needed */
+    background-color: #fff; /* Adjust color as needed */
+  }
+
+  /* Checkbox tick when checked */
+  input[type="checkbox"]:checked + label:before {
+    background-color: #242424; /* Adjust color as needed */
+  }
+
+  /* Checkbox tick icon */
+  input[type="checkbox"] + label:after {
+    content: "\2713";
+    display: none;
+    position: absolute;
+    left: 0.4rem; /* Adjust as needed */
+    top: 0.1rem; /* Adjust as needed */
+    color: #fff; /* Adjust color as needed */
+    font-size: 1.4rem; /* Adjust size as needed */
+  }
+
+  /* Checkbox tick icon when checked */
+  input[type="checkbox"]:checked + label:after {
+    display: inline-block;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #9fa2b4;
+  }
+}
